@@ -1,21 +1,381 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ganganagar Motors Ltd. website coming soon.">
-    <title>Ganganagar Motors Ltd.</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <main class="page">
-      <section class="hero" aria-label="Ganganagar Motors Ltd. website coming soon">
-        <img class="brand-wordmark" src="data:image/webp;base64,UklGRpwdAABXRUJQVlA4WAoAAAAQAAAAKAEAeAAAQUxQSE8PAAAB/yckSPD/eGtEpO4DcBtJciRl5Y7Wdf4bvPSI9K9E9H8C+J+Y/I4k+ZxAbgXIrm2TrPVQ9mcN9CQHPWnSFtqsz9g2aHCYmYHX2KUK25aqtkv1gSpaOVQdXWp2RfVA2h7YDe2dBK+e3K2noNodC2zbezO7sbu1EmBmKARghuszw+PJAAl7vXF4Iccz7VM31YOHT8KHvunT/9oBH///5+TWen0+39+ssrGtxrZR27Zt23ZPkWMbae6t3dS2lZ42adioSRYzv9/3/cfMbLa5aC8bERPAD/7/wf8/+P+/+5qFcv79hZknMdJU8+8lLASKc10226ylMtUvW/3F4gwL3y+YBwOszahDpo7q0yGhWPm1Hz12T8DtewMLAaD9thfN/TgvgEIjocoobrh/Nm7fC1hwoGLAhK1HI+KyzxYs/OKrRSup7NF1wrgRtRlV22xdE78HCAEIE/aaUoVY9Mz89xqraWrloANOapFlyejwXcwDoFIeDCpnXP1mBl89/urzqygZAIGhaBp5Ax7ZUIe+FbNNyczKmFlThJWxb8mKm2BNMStjZlbCPAQIwa2UebGV8ODuDhZC8CILAVC54JS04BYcwvArPpXS9x956EuAxCWRAkiAuaW5f2LwXBa+BQuGbUKbYvBvISgDzMs1o9FEN8q7FZUuFcW36pbSZWhrrf54qUB03GP3Niz89fz3DDAHIuXNKBli2pGYW3k/3mxmYGy6Vl1TWaa2d0+BKxqWX65O1VGQ1hl4c7lBrsYKdcJCKTOVSSoxUqCiRW0tmJOMPPrOvmHhx9u0oUTrvv369+vXoqhiQkXG5iOgxdbb7zg9h9Fim12kZI0XGdXbHTQM0NqX5t63YvQBu0L+3pcHzXaSYDB06nhHuHlMVn2cliJo0BbAjz4NzWVUH/rkQ+2wTcMZ9O6Clzpj4FySrjYFVyZVLJ229p1e+Uxk6546pwvWPE6y4+6DEtJFL/8LgHPaM3WVseYczKj9y1uNHr4ZQOeH3333rWEkTHpwnQSQfnh+LYbfu2rJ8sUbbsCdwT9z0LIRTMikxT3IsYeiyfJjcZwBTwGKbsCCFc4v7vhHrxkHdQ/PXeIYVc+pDoxUWFL3wkVlMA5p05ibfxXWPEa7B6WvNqFxqer740U/VhooKasfsuLL9jKAqI/H4M3hbPWsKJ2fNwuj+nVVYnzYBqfLl5Jl4af0W6momXD8OsU0bwko06M5GJZXVNTSzgSGgVuqXzO6ELW0Fwlz1JiQ5S4lOEM/UyYnrF48gBCYdwXjelIj2OpZzKh5VRmAgwnb0K+Mp1POUeXS/ZrFPDh/VF5HEthURm3Q+n5Fxt5/+y1hxza88malrz2fTzoz/9Ma61so6M222MY5AyYT0yySZYr6ZjgMTWM0yGaToAKpi/VD2i0mczjpjpi6B3/xkdYv1mtdV7iAfCKyzjNxUguRzLlzpQyJtMX2JGbO0wFavaW8m8jN+W0FDbnVV8OWIRMe+2+DQywQAXv6cwYVLOWWntGKxJdLjZZVeDOAc64adQXGJuuGUyzADj10Afz6mCPzRlvgRgJ+8IZUVxI2yjnIFIPD77bc8YxHC5oBk8gcMl1NAoY7qX7WahHu6/tdjQIxLNh1OZVT/vhNd3gQzBCzERiGyX6dFsAMxvYRYKwZDOcpH2XUXr8zhftuDsf0jUxDQMbOCASGjIsXhvfvbITuswlFUPcNNKYEwKyMgdFp4ogdl0nzBo3I4UWWhKYEb5YmmzmegGMgCQKJOddIH7XGNsLo9oUZwF4LcWOn9ybD5ihA1EfVlHU17vgBRjyvVSEBWLESw9iyI30WY4AxqzJFBqBkza55Ss4mM7BUR9HyLaUF49F7uvDOzx4WFTna98UBZ0ptNGJGyZAlkYNqG+lC2ZDAwtWYuYMZmBsWyD2rhphFNejNCswMB6ycsQkaGBgCiiAQmNKg+kn4RgROksBi7Su9cYz2rek4BDcgagZIRZbpn2uxxn4zCRTH3jN06KFHTobdFM3ANWwSCAMwftQyFtl0EIDuZUQ+FlQ3/8Djl6746aNtqXzqFKYQERgDR2BIpTIypi7fPuU9VGS06gAP1fXs49CyVyWYYZXmzFiyTpnWLVqxdh86dg8YvY+cRBPG98KaQRujSFmjlNN/ubQrYSMydqR047BDajMeubCOqZ0ixRmzygFG9MLQrpRet/2d0SJrE25UNICUvYtKK+eA0WUY7oCzVYc+SvXERXSf/diqg/oSqX4j25bMDayQm11KGJzf3bpVAm+0xEoNaitlv1/T8PdxV3xW9/wAqD3ykYVPTqCm7bPSV+NqO4QJv1um+3oze7Hyu1FhgHGTPuiMbVyxlQMEKiEVgdjQAFVspNFyCF6q196Otj6glplEcwOYaTRRZtC5EiuRVaBIMJK3ZIqAs1VLNtaZ2j3a1wXDsqpZLbTqRJLTD+bpWqIIeXKTSeqWmnB2sRRlFGv7/iCj/yyc0tuQcQFSzEsFXUOfZxQ/16IB7KxU+5JwYr1Wv6j7eFjrdRk5sAq2krQVlUlSJpYSG2uULQfBwTcGKmoobfX5qlQgxpN8cTfCmTQIEyDKGmWrPnio/YRIwvgsC8/8yiLGZmMxwMpJbEFmF36CENPWazwzryGj9vaf7X1ORsiGFaL94yqEMX4MLpUAsmhUVxIotqzNPljy0e8/lFbd9ZZ0YfKaMh36G13Es9LdJJygTF/uv1IDf6xG3b717l3wwA7SsxUYG+0b1YxGqxrYsHGNG8rUvDpr5vUQ8v1HiVd32AksbbU9BuAlBAsbWsuKap7cfstrDedcNXDP7zAsTWYXWaHOSlkh2ZLcqt+/TIyw1eIlM84qkLonny+OUwyP48nz3GNpkKXJ1hglZbd9fF7/zB++Ci/hzO6WVfzuLp7XsmncqMLou5Q9t3DdZ7pyO2ndKBi8Qst/u7auUWc9qSwq1YO03POkH6d66Mrbb731VmT163Otn8GKig0r2QyGeaBnW9YtQB5CE2Tr3yGWCPUvP5g6SWFC6wLvffAJAnYkg1D/p4JRnHtnIaLYAxKkTCfwcujtwtiBFGzx5amV8IbRm2U8W/8UuOZ/tvs9KsQsOApEIDKNkH0QEgTMJEOATDOZEWXGtoRSWxLe/TkTIj/Bh/L4mEP4qN2wj6XXPpDuoJLbpXPY9WsVtOa8vb9Qo85ljjIp08s//dmdt2dptscAPj63CUqRaKpKmEGKYsp+8E5ANN2ZR2lBDogVW2G8xEsIZ8KABkcVt9xDVlS56B5iiaxAXlDoOZpkQT2PkmGMH7HBoOq3vycrsmxSyHiMx1cki45lzpxtlc8cCJGkqGYa4fOUF4k4E/thFJtmwx8ti/ZCNQZGzSx4Efak7mnG1TLvKLgcLld+WUH56YST6/Vee8ILSu8bxmVK9QsmNGjVWT+TriWAqcuZ6bzXU0oKQq+O1RGzhhWl8iWKu7VrZW1vPixlDm47HbhrVRMi895O0qKkkmgQe25BbtlrPIVjWavJeVCSXpEmAtHims9zGRjdOtHVBWN6pLwCj+JY6rs2Gni4emUiIFZNJqRvsOitTyaw56rPq36uRmGMPHH48aR8PWFAyltwH46lHWZjKqJ+DIzZDUfnEiAwc0RkLq0356NGjmH9/MN4ZzHt3tKLM1boeTr8XQ26HQ6WLoZrVNDvjBu1dAYHSF92JgmoJp/HrEwW/e+vG1Dxz+1WQYS0VCS9oc6s5RlKfounrZZpdU+sjHzNad/kMiy2uHKv83N53u7fN+XJ5Ty7wYWYlYsQW73zIyJA5YbjViepLPa67+c3I56YRuQleH1VEMbMNnnIqj+bQ5QodJhAWPAh5F5e8+uC4uzkHpEp5m55a5u0atHpO5DnGeyhJSFK7ERWKh1GwlE1KVozHMfZB39/BRMKPEOPwXxCHxbB2Vo9atB6vXLWF7r4GV1Az/f154Sds7zebD/gqhX6I9wmPREwigMZpSuqPenUA5D1SYAcVJUINYS2gGi4/VTAV2lDH7xMcauICQuQhS97n6UNOpaE+1UIYmbbBjIzei5Qo1O8+ULFtECCon5V+77y6WQszFdjAUYOL0DoR83ryqIWnJClmguTslWLlKW6jqprNygqRkW9NJiXpYYBBOYpVcI2vb+AGEV+AIG+S5Xm9Q/M6bBQug5uVH4SA1dq5d1rtGrLI7VhH7otUaple3Ko3tjuMc1t6dyivNZ8rvxyrbjlXmnRFJyNNHr9vjozEKpctB7jsnv+dTqOUfOjToWIYuMlQ3CDyjn3/qod1hRjwTMySt4/gPmKhfFUcJySAAN2aiS4wVGKAiNHnztWKxqyL45nhqI+rSbhCqVCnXf4psD67rB7mm/Q+/eoQSfDPKVZXd06PYwx9tq367LCykcOb8Pgr6UXA4HT1dhArBo7LxCCsL544BqlijqACrYtFOpmUf2+5mNcraifn744i09NJnD6+oU398FzFy6LC06qITDk7s/ef+L2A4b3PXzuJx/MPaMPxr9NN5pXvHvLbkO6+soP/+URWsy55+5ba3H6/ylXiI1h5V2bNRY+gHDaDY1k3TE3eh87p0tc/Gp7GHbRORduhRm9zzrz1EJDeHtxBXkHGzJqyLA+gzefMqoFvZbqlr4jN+vTpyvmUNF3yrjOhtFi2uRJPcBoPX38kDT6ci7v12CeW1ttiVE9fZvtt91tJE7bsaOHJiQ77TsUg+n79oOOO4wJONClLThGm95VmAG0qKLJRjOaNUWAmVkpK2EkTkkz2xgw4S19fQF3vlVR7E7ZYGyCgekbdCMBwCA4xRaM5nyKJvbcbeeOGM1ogAfAHDBwB3MgGOAGFoJ7cLBg/LsbXRFwywAzM8CsyGQGUVgIQKTYg0MIBhZC8CILIQACVOTubhbcA9PzWrMlTrEbZiZJgIOEYY4QMZpKtB46cav+6OfkggPm7kAIDhCCgYVASTNKmhklzcwoaca/0waIZoxE/o0b7T6Q1lw1qU/HWuPbDrUtOvQcNm4k6L1f/wHjO7Yz7l1Fae3nbzwy91erG1Yvr6/P16/Kxxhx91yr2qqaytbtKqs7tG3TuUNbYOU985+LfBc3Wm5/2d9eWZpKEmUVFYWZudPU+q8WfvLu60sBnPjdCweo6jp6h+MvntO1ZVXLllUegoNRHIkNjSu/XrVoycIVi1c4gAU3vpubB6O8VVYmbm5gMgIiNubrU8pacDO+y5uZhyQJUTS3BYRkfH9ozSZ+8P8P/v/B/5s6AFZQOCAmDgAAsDwAnQEqKQF5AD49Ho1EoiGhk0rUeCADxLE3fj5MuIYHXpUt75/W/2M9lSw/3f7/fkzxWpeux/Oh/dP8z7BPzF/pfcA/TT/Y+l16kf6l/qPUB/HP51/r/8v+//y2/7j9jvcR+0fsAf0z+4f/f2c/8h7Af9M/1P//9wD+Rf4r/6+zF/mv/L/tPgV/aH9s/+p8gv85/vP/u/c////IB6AHoAdi5/cu2H/F/kd2T/xL2t9crNXQVD6pANnv0n/L+KJ837+LUXvPPQr/ReC19Y/4PsAfyj+2/9f+0e6f/P/+j++/lV7SvzX/IewH/Lv6j+wntl+xP9xfYs/ZJcHJSVt+Qn1Pg5KStvyE+p8HJSVt+QnYIDPaENk/39SEDBZOV9GGCzAgVWo4Hl/ySB81qGn5p6XfCxffthweF6Bj0fhbBmJ91spyJat8SFccBqpeQAep5s4itfHn7yQIo0inluK5O+5Y/I8dPi9s1bgRiy8VmJloNLJk5KvYxMttHjBfkdwaKRwn9W70f90G7EblSf0o93Zqy2RoKPLUGmVX0VcIylrBqjd0WrB8Ly9hPGV1tf8Lr3rbnor+rJorv+mkUTOPiP/Lqg7j1b+V+2wVht76n1bbx8sxBBTqq5XmRwclJW35CfU+DkpK2/IT6nwclCAA/v/kXYAANPkd+GLuuQ5eXbwpqjpTadZmqAzi2f6qzeFxgMV6b+rThy9PAlc14rwE92XuddJ2/lKZA8QX2UYq5qy/KWe9tgSr6087VucN1ecdQspADcNFdVjKK+UDJmQzo6S03hwl6OAMMSElN/Z3mIQxw8g9RrWMSsEH3/UxqepwVx2o8ZK6PJpWbDJPT7x9TvfLX7+YOEyI2yyjS2pXhOWIwCVPtZ0BDiJXNCDTfAOtp2va9J0lgSetlbabZ2D1xeIOx3XbUhUdngNk9n1Yrv9NUJzlgCI4g5IVT11j6eNuo1qMWH0xH8GAmPU2cHG+VvV/ONK9taYj5v2gsericc5tGUL5kX27gZ5sqreE5HdynSOOb8t9dY/mMofziyGvBGCem3uMmbNK+gYhjtHZ5/2Ptu0wAACuNcBmB8aeVKOTGIc95iK2Vq9Ra4+cjO3/qcP/U53z2zhxq3dguUahOU3suFrVW12ZevJTZNrRDQTGjEwDf3Hoftd7WOVkXMfQuZtQ9RBzFkM9eZmC5n07Bpw81IOkkEJepmN5gqOLL969ljx74jWD7IOd47h2sxv4G5dHwUvz0J6Od/+vp54GgSmaz83kOyo2ZdNJve1MqQxqpGPN+LRHpbEOoW3G0D8fkndeiTmrRrm1EtA2PgZXuACzXFRvD78rBPU8mvEJ4SyV/0hSPiaEfDNRanXqp4mNyHKdzmLFlHyXMH5ZjB6zcn5au/1iR984lUsc/sIAAIjeb05BCHRcrbGXoKGDWlzRmlNM70ZR0oR8mK25EGbwQMmVJBgD+EIKzFk1NfBaL99OxHaHIEVn/LtcZOlgkK33wgDBBGoEVNCJHdqSvcjeITBxCfAfyahJ6zEcQ17z8SZN+fMMi9ThxJAHV5xczzx/UsWe0dHLrEmG7hG1TePAle5AH/hNWDEwDubzcQ6Dd1otrsvEPwrYz5GAq5Dr+4T9GB94cW2Sjrvp39tIRKZ7AFa/zjA4hqh/5IpbCthGMwFq9zH/LKZViBVOh/XiG1LMc+czgJmQgKX+cM5j0kmcpRU1bUTwn8Ci+psrvo46vPf5x/XuQbuyR1TFDKzV4k++OV/+/lLMETujUQ4J0LCRfzOWUejYvZETOayCDHh9X0vKN0X9isc0xCD3TWnfRBhoXddBzQub7WKpLizI4tcEB5rbWz2PonVQvffBWs3lYC3srCfPQDy2z5XW/eV/0APB+/n+Ed4BrIMg9hBJ5pI+2LJCuVfha5Kqy5yWDAnU3UNDwWwwOsnHihCnrDos51oklDk/FObMv8T3n8ky/UQSeP/vO44eLhqBt3/H8f7e8DMkl54mr1OvPQKjxy4c1Qz7tIIzPIpEBvyXWGlJ8ztfoVu3slHibVGCEJaToPzs7heW52bdBM2lctwR2ACmNPKiaKEnhVK9KjMFkBfCCnlgHvgPN+mDbkV2anpNnfvVold3Gp3P2Lz2ANHxCW3TwDGOptgK7pCof2PS3ex+KAk2aKc7qw4kk1BPrexy0U8wfWwvL6r1GfhmqaNr1FmgkRVa/C6mgMLhZ4gmY9Kw9IbPrSRDvNY1Wg5+6Z0GWw/FKBpu9UZDY0y3njOzX4byc5fu553EOFVR499/bDHyeC8TWXnMrQuxUb9Cr4B/takTtOmnPtgraY2OhGqBClzrBZE40Hh4vdkWbLDZRdlJTsiPnkBL+BtkoipyLOd6FMpjRnDotPsA52fMz7w8DF4xKAJZYsn7oBP1TNQMiG2Ru86XaIaQJ0m6kgN2he3oS97WyIr+0Y5kLz8I5vnQ6Qqq5dAAEoEuchAgMG4je0l6v/ebpPZsx+x47ZYlZ6D9Jj4Z6PdzTY3Qi9E0pD/pJvm5nKrZIsGcHCJku8DpdWfd/wPO97Wq38eskzHsF4T1ytv03UWiAE5ek/lufUb5x8RPGrUslAcOmZ9KPf92IDZX1d3e32kjXBUnLEFWO/6fYBu/3++n4/XhRSLHOwQUAH20JN/tbfkdS1tm7lugfhtU5tKn0Wm21eoPMp6pRNqO3qC+vqwVxvJnwAV6K9qHy3P7P5cmuTynCI5m2e5Ubyi8yZIu98kko/cMfZGaXhAUPgl47VzubSTZ+Tbv/nMQB4XToay8O+4ReR0rx84Hc3n7Yx7o/Pv0bLhV1id9+6GKEBvrkAvs7t46J46Q56ovVtHoYVdSXbKbxBv2Wr9snExLXOc5WtPeq8fBenv9vwmsbCCk7R8qvPd45NvX375UtAeKbORIF+fsEAn/fuy98xU0k8gIUd1OngAwzWxRqWk7TqbqjJjiULat9yuzkMTjpwnKsvfEURfwhLZwdQ5SzHOMAA0uEMs8GphdSenj46F2gzl7NnUEC1aGFOoMmy3VZ78F2WqPy45L4z8H8Nw7OJlj2h3WUzuRtAGtDUhDXLnvMYTsgO+rGh7HHsgQq505BjsCpE5GkwGnu0duHy1mrityna+brUoNgcAosvuMWe3e1izJuI/SBgqpbGDPL72c2Z+ayp+JZilhKWnu/4lFAMWuFb3ABVBcNlM4PHmlLYa0FXP81vs3gjg5RAY3NuIUFl8g+Q3bgS7snMlRknqOQgGxX4m25/3WHlY4/pksvkIV1lSukWHD1pNDLEuw56ipGAYech2HX3XAddp47uvoKIY11BVH2oqH3SYt7yKki8PnoLmkerPkNxcR833i8L9d/ccF7Vhxqjt2NkZEh0E4301bux6RCzkPUaPqjf/GdzyltECx4fd6csl9SqTxHRixAPOUJfOv5vUX3Zgohw9Tx8YIWcpiw9O5qZIQldJFUIKKudJcsDL1ca3AN5jzZssWqdqCYk9V72i0j1d/NhX3TNQx963HJHCZf3RCmiDtYmYxLU/w1Ele0gN+p/BU7DJG9agY5hgaIkq6pJG3cWhG654frjJZ/xgcQ4iJuU4qlI9MHjD516aStAFZCqudopcnK10dVvL5JP/ByOAQ1OriGV4ddmKq1wmuhrT2aIesLCCW5GDuUVxXm3lccn1NwJoiJQAt/E45DQlsCGN9UeUxEyRBMjQiBzHLYpwMcKbN6+91Szxc6dfOZpIRHsP2JWu2XYrC5Ksx2nKcCzYydKjOETjCvBw1nLo0oLUoDhhZoUAQlMAzgbbllB+qf03IsHFHrEoahqLW+hCtckWkrpvjgLJKtW5bTWrKw0PCZ2Fw5cnSGzW0koTZQRQ8tgH78Iq5YbTDwLY4lJS8NNKgIh1gpxlAhfl8GcPN2Eo+OZqZRqBoP6wVgzTDN81w7Grfpy/SID4aQrkEqxMUnavCzzik12g0h4N7uavjLmRa4PjdE7iK/8KF7o51ZYLSHzjM7P6kxBG2gDwuEYBXf5dUm5iE6sVj2Ep+0Mg/6EEU0ay6lTfYPbYlwnCuI960oQ6yeoX1/z9/bQbVcukB26Fcu8D36bMIQcYtzTKpTl/shuwUJ83/se+9NxxmpM9MCkbXvqxDXVF5M5oLMx9qJrJf6wpwc1aYiWJmOPPaKOaNhERTItpMNeesgwr1urJoCKEHvROMKw4/fJIx3sIngDRIjmPayN4/peeg1jfgDmIz++7OgYQcs1P7UUpvs9/kb0m0r0trtx6NbO66hiViDUEIcEXLK8gW3g/Uc9QwvNlSbwKw9c6JzCDbcXoKBDo2ABtSHtFFBEoP9l7/6fNKxXL44tWa2nuqHLMm/PIM1jome/w2g7Afy2D3O300hxcRwjWi0uKjNClWDvbIXXO8CYO9MP2It3Fl450ZcPmAFxZQn94j8L9SXLeIRVTTG1kgBAW6I3R2yE0AQVZhK98Ult3vM7sByyT8MCmSpczAQrPwPymAm5yViNB0ZqnVpOGy1tpUAUpyqiH1lfSZLfq/4RYhIS58iWyNBp8TOC1r+S5Z1j04IhbKXTGoYVNLTlYQsI9BvsIODTMgZ9yT3oWYp0VMbgrw4ST0NzXcHl5me/NsnAsACbvJ1GbJ+mOheu2XiF5Ggygpwa+DGJ8qzjEC/YfusTxq4aMZUatC+NQ+GLRO2Y6YIgfQdc6/EkxpuG14LFjFm15eocNLOOezxpLb94rvlS3fG+eTgAKwS5KxLcusOowb8GTRzogjq1K78uLlIZsDS0dFovt1ZrF8xxCFHqHz4d5jXRcodDGi2v4AgOko/4TA1HTYLRLHmgwwjf/7+RkQxgAAAAAAHLyABQQAAAAAAA==" alt="Ganganagar Motors Ltd.">
-        <p class="coming-soon">Website coming soon</p>
-      </section>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ganganagar Motors Ltd (GNML) offers comprehensive C&F solutions and automotive industry services with over 60 years of heritage." />
+  <title>Ganganagar Motors Ltd | C&F &amp; Automotive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #1B2740;
+      --gold:    #B8913A;
+      --gold-lt: #D4A94E;
+      --cream:   #F7F4EF;
+      --mid:     #E8E3DA;
+      --text:    #2C2C2C;
+      --muted:   #6B6B6B;
+      --white:   #FFFFFF;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw;
+      height: 70px;
+      background: rgba(27, 39, 64, 0.97);
+      backdrop-filter: blur(8px);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; font-weight: 700;
+      color: var(--white); letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none; font-size: 0.88rem;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+
+    /* hamburger */
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); transition: 0.3s; }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      background: var(--navy);
+      display: flex; align-items: center;
+      padding: 100px 5vw 60px;
+      position: relative; overflow: hidden;
+    }
+    #hero::after {
+      content: '';
+      position: absolute; right: -80px; top: 50%; transform: translateY(-50%);
+      width: 520px; height: 520px;
+      background: radial-gradient(circle, rgba(184,145,58,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner { max-width: 680px; position: relative; z-index: 1; }
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.5rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block; width: 36px; height: 1px;
+      background: var(--gold); vertical-align: middle; margin-right: 10px;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+      font-weight: 700; line-height: 1.12;
+      color: var(--white); margin-bottom: 1.4rem;
+    }
+    h1 em { font-style: normal; color: var(--gold); }
+    .hero-sub {
+      color: rgba(255,255,255,0.65);
+      font-size: 1.05rem; max-width: 520px; margin-bottom: 2.5rem;
+    }
+    .hero-cta {
+      display: inline-block;
+      background: var(--gold); color: var(--navy);
+      font-size: 0.85rem; font-weight: 500; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none;
+      padding: 0.9rem 2rem; transition: background 0.2s;
+    }
+    .hero-cta:hover { background: var(--gold-lt); }
+
+    .hero-stats {
+      display: flex; gap: 3rem; margin-top: 4rem;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 2rem;
+    }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem; font-weight: 700; color: var(--gold);
+    }
+    .stat-label { font-size: 0.78rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.08em; }
+
+    /* ─── SECTION COMMONS ─── */
+    section { padding: 90px 5vw; }
+    .section-label {
+      font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 0.8rem;
+    }
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 2.9rem);
+      font-weight: 700; line-height: 1.2; color: var(--navy);
+      margin-bottom: 1.2rem;
+    }
+    .section-desc { color: var(--muted); max-width: 560px; margin-bottom: 3rem; }
+
+    /* ─── SERVICES ─── */
+    #services { background: var(--cream); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5px; background: var(--mid);
+    }
+    .service-card {
+      background: var(--white);
+      padding: 2.4rem 2rem;
+      transition: background 0.25s;
+    }
+    .service-card:hover { background: var(--navy); }
+    .service-card:hover .service-title,
+    .service-card:hover .service-body { color: var(--white); }
+    .service-card:hover .service-icon { color: var(--gold); }
+    .service-icon { font-size: 1.8rem; margin-bottom: 1.2rem; color: var(--navy); display: block; }
+    .service-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem; font-weight: 700;
+      color: var(--navy); margin-bottom: 0.7rem;
+      transition: color 0.25s;
+    }
+    .service-body { font-size: 0.9rem; color: var(--muted); line-height: 1.7; transition: color 0.25s; }
+
+    /* ─── COMMITMENT ─── */
+    #commitment { background: var(--navy); }
+    #commitment h2 { color: var(--white); }
+    #commitment .section-label { color: var(--gold); }
+    #commitment .section-desc { color: rgba(255,255,255,0.55); }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+    .value-card {
+      border-left: 2px solid var(--gold);
+      padding-left: 1.4rem;
+    }
+    .value-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem; font-weight: 600;
+      color: var(--white); margin-bottom: 0.5rem;
+    }
+    .value-card p { font-size: 0.88rem; color: rgba(255,255,255,0.5); line-height: 1.7; }
+
+    /* ─── LEADERSHIP ─── */
+    #leadership { background: var(--cream); }
+    .leader-wrap {
+      display: flex; gap: 4rem; align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .leader-text { flex: 1 1 340px; }
+    .leader-text blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; font-style: italic; line-height: 1.55;
+      color: var(--navy); border-left: 3px solid var(--gold);
+      padding-left: 1.4rem; margin: 1.5rem 0;
+    }
+    .leader-bio { color: var(--muted); font-size: 0.92rem; line-height: 1.75; }
+    .leader-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; font-weight: 700; color: var(--navy); margin-top: 1.5rem;
+    }
+    .leader-title { font-size: 0.8rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.1em; }
+
+    .leader-avatar {
+      flex: 0 0 auto;
+      width: 220px; height: 260px;
+      background: var(--navy);
+      display: flex; align-items: flex-end; justify-content: center;
+      overflow: hidden; position: relative;
+    }
+    .avatar-initials {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 5rem; font-weight: 700; color: rgba(184,145,58,0.3);
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      user-select: none;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--navy);
+      padding: 2.5rem 5vw;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; font-weight: 700;
+      color: var(--white);
+    }
+    .footer-logo span { color: var(--gold); }
+    footer p { color: rgba(255,255,255,0.35); font-size: 0.8rem; }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { color: rgba(255,255,255,0.4); font-size: 0.78rem; text-decoration: none; }
+    .footer-links a:hover { color: var(--gold); }
+
+    /* ─── MOBILE ─── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; flex-direction: column; position: absolute;
+        top: 70px; left: 0; right: 0; background: var(--navy);
+        padding: 1.5rem 5vw 2rem; gap: 1.2rem; }
+      .nav-links.open { display: flex; }
+      .nav-toggle { display: flex; }
+
+      .hero-stats { gap: 2rem; flex-wrap: wrap; }
+      .leader-wrap { flex-direction: column; }
+      .leader-avatar { width: 100%; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">GN<span>ML</span></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#commitment">About</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+  </ul>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Ganganagar Motors Limited</span>
+    <h1>Built on <em>60 years</em><br>of trust &amp; trade</h1>
+    <p class="hero-sub">
+      A legacy enterprise delivering Carrying &amp; Forwarding services,
+      lubricant manufacturing, and automotive dealerships across India.
+    </p>
+    <a href="#services" class="hero-cta">Explore Our Services</a>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">60+</div>
+        <div class="stat-label">Years of Network</div>
+      </div>
+      <div>
+        <div class="stat-num">8+</div>
+        <div class="stat-label">Years in C&amp;F</div>
+      </div>
+      <div>
+        <div class="stat-num">4</div>
+        <div class="stat-label">Areas of Operation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label">Areas of Operation</div>
+  <h2>What We Do</h2>
+  <p class="section-desc">We specialise in exporting quality automotive parts and lubricant products built to meet demanding industry standards.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🛺</span>
+      <div class="service-title">Bajaj &amp; TVS 3-Wheeler Spare Parts</div>
+      <p class="service-body">Exporters of a comprehensive range of genuine spare parts for Bajaj and TVS three-wheelers — serving fleet operators, distributors, and dealers across international markets.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🛢️</span>
+      <div class="service-title">Lubricant Oil &amp; Grease — Full Range</div>
+      <p class="service-body">A complete portfolio of lubricant oils and greases for automotive and industrial applications, exported globally with a focus on quality, consistency, and on-time delivery.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMMITMENT -->
+<section id="commitment">
+  <div class="section-label">Our Commitment</div>
+  <h2>The Values We Work By</h2>
+  <p class="section-desc">Every relationship in the GNML ecosystem is built on a foundation of ethics, transparency, and genuine care.</p>
+  <div class="values-grid">
+    <div class="value-card">
+      <h3>Integrity</h3>
+      <p>Be honest and ethical. Do what's right, even when no one is watching.</p>
+    </div>
+    <div class="value-card">
+      <h3>Tradition &amp; Progression</h3>
+      <p>Respect our heritage and leverage creativity to innovate and shape the future.</p>
+    </div>
+    <div class="value-card">
+      <h3>Compassion</h3>
+      <p>Be a human, be kind. Develop trust, respect, and genuine care for all stakeholders.</p>
+    </div>
+    <div class="value-card">
+      <h3>Diversity &amp; Leadership</h3>
+      <p>Take pride in what you do. Empower yourself and those around you to lead.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="leadership">
+  <div class="section-label">Leadership</div>
+  <h2>Guided by Vision</h2>
+  <div class="leader-wrap">
+    <div class="leader-text">
+      <blockquote>"His unwavering passion for social development and his contributions to communities around him define a legacy built on people."</blockquote>
+      <p class="leader-bio">
+        Suresh Agarwal, Director and Chairman of Ganganagar Motors Limited and MTR Exports,
+        is a highly acclaimed business leader who has shaped global trade through exceptional leadership
+        and a willingness to take calculated risks. His dedication to excellence and commitment
+        to empowering people has earned him wide recognition and respect across the industry.
+      </p>
+      <div class="leader-name">Suresh Agarwal</div>
+      <div class="leader-title">Director &amp; Chairman</div>
+    </div>
+    <div class="leader-avatar">
+      <div class="avatar-initials">SA</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">GN<span>ML</span> &mdash; GangaNagar Motors Ltd</div>
+  <p>©2025 GangaNagar Motors Private Limited. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms &amp; Conditions</a>
+  </div>
+</footer>
+
+<script>
+  // Nav toggle
+  const toggle = document.getElementById('nav-toggle');
+  const links  = document.getElementById('nav-links');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  // Smooth-close nav on scroll
+  window.addEventListener('scroll', () => links.classList.remove('open'));
+</script>
+
+</body>
 </html>
